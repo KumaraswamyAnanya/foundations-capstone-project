@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cart</title>
+	<link href="styles.css" rel="stylesheet">	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="OrderIDHidden" hidden ></div>
+	<div id="summarypage" >
+        <header style="display: flex;">
+            <h1 id="restaurant-name">Sugar Crave</h1>        
+            <nav class="navCart " style="display: flex;" >
+                <h3 class="crumb"><a href="./index.html">Home</a></h3>
+                <h3 class="crumb"><a href="./menu.html">Menu</a></h3>
+                <h3 class="crumb"><a href="./cart.html">Cart</a><div id="cart-count"  ></div></h3>
+            </nav>
+        </header>
+    </div>
+ 
+	<main class="Summary">
+        <div class="orderSummary">
+            <h3>Order Summary: </h3>
+		    <section  id="cart-list"></section>
+        </div>
+        <div class="orderConfirmationNote">
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+            <p id="p4"></p>
+         </div>
+	</main>  
+
+    <footer class="summaryFooter">
+        <h3>" In every bite, the magic of patisserie "</h3>
+    </footer>
+
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="summary.js"></script>
+
+</body>
+</html>
